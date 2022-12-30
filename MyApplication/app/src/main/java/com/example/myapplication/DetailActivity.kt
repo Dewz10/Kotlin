@@ -12,6 +12,8 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
-        textOrder = findViewById(R.id.textOrder)
+        textOrder = findViewById<TextView>(R.id.textOrder)
+        var intent = intent
+        textOrder!!.text = intent.getStringExtra("Order")
     }
 }
