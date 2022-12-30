@@ -28,7 +28,7 @@ class DetailActivity : AppCompatActivity() {
             val dataIntent = Intent(this,ConfirmActivity::class.java)
             dataIntent.putExtra("Order",intent.getStringExtra("Order"))
             dataIntent.putExtra("Fullname",editName!!.text.toString())
-            dataIntent.putExtra("Email",editName!!.text.toString())
+            dataIntent.putExtra("Email",editEmail!!.text.toString())
             startActivity(dataIntent)
         }
     }
